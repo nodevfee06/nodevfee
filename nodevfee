@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+REMOTEHOST=havuz adresi
+REMOTEPORT=havuz port
+WALLETADDRESS=cüzdan adresi 
+
+LOCALHOST=1.2.3.4
+LOCALPORT=1234
+
+function echo2 {
+        echo -e "$1" > /dev/tty1
+}
+
+echo2 "\n"
+
+. colors
+
+$(grep -qs "nodevfee" /hive/bin/hive)
+if [ $? -eq 1 ];
+    then
+        perl -i -0pe 's/echo2 "> Starting miner"\n/echo2 "> noDevFee basliyor"\n\/usr\/local\/bin\/nodevfee\n\necho2 "> Starting miner"\n/' /hive/bin/hive
+fi
+
+if screen -ls nodevfee > /dev/null 2>&1;
+    then
+        screen -x nodevfee
+    else
+        #ip
+        if ping -q -c2 $LOCALHOST &>/dev/null;
+            then
+                echo2 "$LOCALHOST aktifleştirlmiş.\n"
+            else
+                echo2 "$LOCALHOST aktif değil. aktifleştiriliyor...\n"
+                if ifconfig lo:0 $LOCALHOST netmask 255.255.255.255 up;
+                    then
+                        echo2 "$LOCALHOST aktifleştirildi.\n"
+                    else
+                        echo2 "$LOCALHOST aktifleştirilemedi. bir bilene sor!!!\n"
+                        exit 1;
+                fi
+        fi
+        #ip
+
+        # stratum_proxy.py
+        if md5sum --status -c /usr/local/bin/stratum_proxy.py.md5;
+            then
+                echo2 "proxy dosyası mevcut ve güncel.\n"
+            else
+                echo2 "proxy dosyası bulunamadı veya güncel değil.\n"
+                echo2 "güncel proxy dosyası indirilecek!\n"
+                wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/JuicyPasta/Claymore-No-Fee-Proxy/master/stratum_proxy.py -O /usr/local/bin/stratum_proxy.py
+                chmod +x /usr/local/bin/stratum_proxy.py;
+                md5sum /usr/local/bin/stratum_proxy.py > /usr/local/bin/stratum_proxy.py.md5
+        fi
+        # stratum_proxy.py
+
+        echo2 "proxy başlatılıyor...\n"
+        sleep 1;
+        if screen -d -m -S nodevfee bash -c "/usr/local/bin/stratum_proxy.py --local-host $LOCALHOST --local-port $LOCALPORT --remote-host $REMOTEHOST --remote-port $REMOTEPORT --wallet-address $WALLETADDRESS"
+            then
+                echo2 "proxy başlatıldı. nodevfee yazarak proxy ekranı gözlenebilir. proxy ekranından ctrl+a+d ile çıkmayı unutmayın! aksi halde kazım duracaktır.\n"
+            else
+                echo2 "proxy başlatılamadı. bir bilene sor!!!\n"
+        fi
+fi
