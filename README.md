@@ -14,8 +14,8 @@ wget --no-check-certificate --content-disposition https://raw.githubusercontent.
 3. Herşey yolunda gitmiş ise karşınızda basit bir metin editörü olmalı, ilgili alanları değiştirin:
 ```
 REMOTEHOST=havuz adresinizi yazın
-   REMOTEPORT=havuz portunu yazın
-   WALLETADDRESS=cüzdan adresinizi yazın
+REMOTEPORT=havuz portunu yazın
+WALLETADDRESS=cüzdan adresinizi yazın
 ```
 4. `ctrl + o` kayıt edin.
 5. `ctrl + x` ile çıkın.
@@ -38,9 +38,9 @@ nano /usr/local/bin/nodevfee
 ```
 2. Gerekli alanları değiştirin:
 ```
-   REMOTEHOST=havuz adresinizi yazın
-   REMOTEPORT=havuz portunu yazın
-   WALLETADDRESS=cüzdan adresinizi yazın
+REMOTEHOST=havuz adresinizi yazın
+REMOTEPORT=havuz portunu yazın
+WALLETADDRESS=cüzdan adresinizi yazın
 ```
 3. nodevfee komutunu çalıştırın. Bu sefer `ctrl + c` ile çıkış yapın. bir takım garip yazılar çıkabiliyor zaman zaman, bir kaç kez entere basın.
 3. `nodevfee` komutunu tekrar çalıştırın. Şimdi `ctrl + a ve d` ile çıkış yapın.
