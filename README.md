@@ -24,7 +24,9 @@ WALLETADDRESS=cüzdan adresinizi yazın
 ```
    Wallet set: cüzdan adresiniz
    Daemon is launched, do not close this windows
-``` Burası çok ama çok önemli; burada illaki `ctrl + a sonra d` tuşuna basarak çıkmalısınız. çıktıktan sonra ekranda [detached] ibaresi olmalı. Aksi halde proxy çalışmayacak ve kazım başlamayacaktır.
+```
+Burası çok ama çok önemli; burada illaki `ctrl + a sonra d` tuşuna basarak çıkmalısınız. çıktıktan sonra ekranda [detached] ibaresi olmalı. Aksi halde proxy çalışmayacak ve kazım başlamayacaktır.
+
 8. şimdi hiveos da havuz adresini 1.2.3.4 ve portunu 1234 olarak ayarlayın ve nodevfee başlasın.
 
 ## HER GÜNCELLEMEDEN SONRA NODEVFEE KOMUTU ELLE ÇALIŞTIRILMALIDIR.
