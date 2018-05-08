@@ -6,7 +6,10 @@ Bu script https://github.com/JuicyPasta/Claymore-No-Fee-Proxy adresindeki proxy 
 Adım adım yapılması gerekenler:
 
 1. hiveos konsolunu açın
-2. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.```wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee && chmod +x /usr/local/bin/nodevfee```
+2. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.
+```
+wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee && chmod +x /usr/local/bin/nodevfee
+```
 
 3. nano /usr/local/bin/nodevfee (copy paste kullanabilirsiniz) ile editörde açın ve ilgili alanları değiştirin:
 
