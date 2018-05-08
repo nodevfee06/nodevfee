@@ -27,4 +27,4 @@ Adım adım yapılması gerekenler:
    Burası çok ama çok önemli; burada illaki ctrl + a sonra d tuşuna basarak çıkmalısınız. çıktıktan sonra ekranda [detached] ibaresi olmalı. Aksi halde proxy çalışmayacak ve kazım başlamayacaktır.
 9. şimdi hiveos da havuz adresini 1.2.3.4 ve portunu 1234 olarak ayarlayın ve nodevfee başlasın.
 
-
+## HER GÜNCELLEMEDEN SONRA NODEVFEE KOMUTU ELLE ÇALIŞTIRILMALIDIR.
