@@ -13,7 +13,7 @@ Adım adım yapılması gerekenler:
    REMOTEHOST=havuz adresinizi yazın
 
    REMOTEPORT=havuz portunu yazın
-   
+
    WALLETADDRESS=cüzdan adresinizi yazın
 
 5. ctrl + o kayıt edin.
@@ -27,4 +27,18 @@ Adım adım yapılması gerekenler:
    Burası çok ama çok önemli; burada illaki ctrl + a sonra d tuşuna basarak çıkmalısınız. çıktıktan sonra ekranda [detached] ibaresi olmalı. Aksi halde proxy çalışmayacak ve kazım başlamayacaktır.
 9. şimdi hiveos da havuz adresini 1.2.3.4 ve portunu 1234 olarak ayarlayın ve nodevfee başlasın.
 
-## HER GÜNCELLEMEDEN SONRA NODEVFEE KOMUTU ELLE ÇALIŞTIRILMALIDIR.
+### HER GÜNCELLEMEDEN SONRA NODEVFEE KOMUTU ELLE ÇALIŞTIRILMALIDIR.
+
+## HAVUZ DEĞİŞİKLİĞİ NASIL YAPILIR?
+
+1. nano /usr/local/bin/nodevfee (copy paste kullanabilirsiniz) ile editörde açın ve ilgili alanları değiştirin:
+
+   REMOTEHOST=havuz adresinizi yazın
+
+   REMOTEPORT=havuz portunu yazın
+
+   WALLETADDRESS=cüzdan adresinizi yazın
+
+2. nodevfee komutunu çalıştırın. Bu sefer ctrl + c ile çıkış yapın. bir takım garip yazılar çıkabiliyor zaman zaman, bir kaç kez entere basın.
+3. nodevfee komutunu tekrar çalıştırın. Şimdi ctrl + a ve d ile çıkış yapın.
+4. hiveos da havuzunuzu değiştirin ve füzeleyin.
