@@ -33,7 +33,7 @@ Burası çok ama çok önemli; burada illaki `ctrl + a sonra d` tuşuna basarak 
 
 ### HAVUZ DEĞİŞİKLİĞİ NASIL YAPILIR?
 
-1. Aşağıdaki komut ile text editörününde dosyayı açın:
+1. Aşağıdaki komut ile metin editörününde dosyayı açın:
 ```
 nano /usr/local/bin/nodevfee
 ```
