@@ -9,9 +9,13 @@ Adım adım yapılması gerekenler:
 2. wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee (copy paste kullanabilirsiniz.)
 3. chmod +x /usr/local/bin/nodevfee (copy paste kullanabilirsiniz.)
 4. nano /usr/local/bin/nodevfee (copy paste kullanabilirsiniz) ile editörde açın ve ilgili alanları değiştirin:
+
    REMOTEHOST=havuz adresinizi yazın
+
    REMOTEPORT=havuz portunu yazın
+   
    WALLETADDRESS=cüzdan adresinizi yazın
+
 5. ctrl + o kayıt edin.
 6. ctrl + x ile çıkın.
 7. nodevfee komutunu çalıştırın.
