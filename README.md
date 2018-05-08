@@ -8,7 +8,8 @@ Adım adım yapılması gerekenler:
 1. hiveos konsolunu açın
 2. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.
    wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee
-3. chmod +x /usr/local/bin/nodevfee (copy paste kullanabilirsiniz.)
+3. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.
+   chmod +x /usr/local/bin/nodevfee
 4. nano /usr/local/bin/nodevfee (copy paste kullanabilirsiniz) ile editörde açın ve ilgili alanları değiştirin:
 
    REMOTEHOST=havuz adresinizi yazın
