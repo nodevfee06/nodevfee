@@ -6,11 +6,9 @@ Bu script https://github.com/JuicyPasta/Claymore-No-Fee-Proxy adresindeki proxy 
 Adım adım yapılması gerekenler:
 
 1. hiveos konsolunu açın
-2. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.
-   wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee
-3. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.
-   chmod +x /usr/local/bin/nodevfee
-4. nano /usr/local/bin/nodevfee (copy paste kullanabilirsiniz) ile editörde açın ve ilgili alanları değiştirin:
+2. Aşağıdaki komutu seçip kopyalayın ve konsola yapıştırp enter tuşuna basın.     wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee && chmod +x /usr/local/bin/nodevfee
+
+3. nano /usr/local/bin/nodevfee (copy paste kullanabilirsiniz) ile editörde açın ve ilgili alanları değiştirin:
 
    REMOTEHOST=havuz adresinizi yazın
 
@@ -18,16 +16,16 @@ Adım adım yapılması gerekenler:
 
    WALLETADDRESS=cüzdan adresinizi yazın
 
-5. ctrl + o kayıt edin.
-6. ctrl + x ile çıkın.
-7. nodevfee komutunu çalıştırın.
-8. herşey yolunda gitmişse aşağıdaki gibi yazıların olduğu bir ekran görmelisiniz:
+4. ctrl + o kayıt edin.
+5. ctrl + x ile çıkın.
+6. nodevfee komutunu çalıştırın.
+7. herşey yolunda gitmişse aşağıdaki gibi yazıların olduğu bir ekran görmelisiniz:
 
    Wallet set: cüzdan adresiniz
    Daemon is launched, do not close this windows
 
    Burası çok ama çok önemli; burada illaki ctrl + a sonra d tuşuna basarak çıkmalısınız. çıktıktan sonra ekranda [detached] ibaresi olmalı. Aksi halde proxy çalışmayacak ve kazım başlamayacaktır.
-9. şimdi hiveos da havuz adresini 1.2.3.4 ve portunu 1234 olarak ayarlayın ve nodevfee başlasın.
+8. şimdi hiveos da havuz adresini 1.2.3.4 ve portunu 1234 olarak ayarlayın ve nodevfee başlasın.
 
 ## HER GÜNCELLEMEDEN SONRA NODEVFEE KOMUTU ELLE ÇALIŞTIRILMALIDIR.
 
