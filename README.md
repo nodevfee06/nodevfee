@@ -11,9 +11,9 @@ Adım adım yapılması gerekenler:
 wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/nodevfee06/nodevfee/master/nodevfee -O /usr/local/bin/nodevfee && chmod +x /usr/local/bin/nodevfee && nano /usr/local/bin/nodevfee
 ```
 
-3. Herşey yolunda gitmiş ise karşınızda basit bir tect editörü olmalı, ilgili alanları değiştirin:
+3. Herşey yolunda gitmiş ise karşınızda basit bir metin editörü olmalı, ilgili alanları değiştirin:
 ```
-   REMOTEHOST=havuz adresinizi yazın
+REMOTEHOST=havuz adresinizi yazın
    REMOTEPORT=havuz portunu yazın
    WALLETADDRESS=cüzdan adresinizi yazın
 ```
