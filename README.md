@@ -19,7 +19,7 @@ WALLETADDRESS=cüzdan adresinizi yazın
 ```
 4. `ctrl + o` kayıt edin.
 5. `ctrl + x` ile çıkın.
-6. `nodevfee` komutunu 2 defa çalıştırın. İlk gerekiyorsa proxy dosyasını indirecek, ikinci seferde çalışacaktır.
+6. `nodevfee` komutunu 2 defa çalıştırın. İlk seferde gerekiyorsa proxy dosyasını indirecek, ikinci seferde çalışacaktır.
 7. herşey yolunda gitmişse aşağıdaki gibi yazıların olduğu bir ekran görmelisiniz:
 ```
    Wallet set: cüzdan adresiniz
