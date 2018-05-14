@@ -43,6 +43,6 @@ REMOTEHOST=yeni havuz adresinizi yazın
 REMOTEPORT=yeni havuz portunu yazın
 WALLETADDRESS=yeni cüzdan adresinizi yazın
 ```
-3. `nodevfee` komutunu çalıştırın. Bu sefer `ctrl + c` ile çıkış yapın. Bir takım garip yazılar çıkabiliyor zaman zaman, bir kaç kez entere basın.
+3. `nodevfee` komutunu çalıştırın. Bu sefer `ctrl + c` ile çıkış yapın. Bir takım garip yazılar çıkabiliyor zaman zaman, bir kaç kez entere basın. Zaman zamanda komut satırına geri dönmüyor. Reboot edin.
 3. `nodevfee` komutunu tekrar çalıştırın. Şimdi `ctrl + a ve d` ile çıkış yapın.
 4. Hiveos da havuzunuzu değiştirin ve füzeleyin.
